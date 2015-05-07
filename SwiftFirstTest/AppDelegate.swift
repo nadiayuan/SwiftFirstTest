@@ -3,7 +3,7 @@
 //  SwiftFirstTest
 //
 //  Created by nadia on 14-6-6.
-//  Copyright (c) 2014年 叶媛媛. All rights reserved.
+//  Copyright (c) 2014. All rights reserved.
 //
 
 import UIKit
