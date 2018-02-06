@@ -39,9 +39,9 @@ func testEnums ()
     switch productBarcode
     {
     case .UPCA(let numberSystem, let identifier, let check):
-        println("UPC-A with value of \(numberSystem), \(identifier), \(check).")
+        print("UPC-A with value of \(numberSystem), \(identifier), \(check).")
     case .QRCode(let productCode):
-        println("QR code with value of \(productCode).")
+        print("QR code with value of \(productCode).")
     }
     // prints "QR code with value of ABCDEFGHIJKLMNOP.”
 }

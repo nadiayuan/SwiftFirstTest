@@ -23,37 +23,37 @@ class NYTestObject
     {
         for index in 1...5      // 1, 2, 3, 4, 5
         {
-            println("index: \(index)")
+            print("index: \(index)")
         }
         
         for _ in 1...5
         {
-            println(" _ is for index is not needed")
+            print(" _ is for index is not needed")
         }
         
         // string
         for character in "strings"
         {
-            println("Character is : \(character)")
+            print("Character is : \(character)")
         }
         
         // array
         let names = ["Anna", "Alex", "Brian", "Jack"]
         for name in names
         {
-            println("Hello, \(name)!")
+            print("Hello, \(name)!")
         }
         
-        for (index, name) in enumerate(names)
+        for (index, name) in names.enumerated()
         {
-            println("index : \(index) with name : \(name)")
+            print("index : \(index) with name : \(name)")
         }
         
         // dic
         let numberOfLegs = ["spider": 8, "ant": 6, "cat": 4]
         for (animalName, legCount) in numberOfLegs
         {
-            println("\(animalName)s have \(legCount) legs")
+            print("\(animalName)s have \(legCount) legs")
         }
     }
     
@@ -63,7 +63,7 @@ class NYTestObject
         
         for (code, value) in numbersDic
         {
-            println("numbersDic with \(code) : \(value)")
+            print("numbersDic with \(code) : \(value)")
         }
     }
     
@@ -87,9 +87,9 @@ class NYTestObject
     {
         // test equilate triangle
         let testTriangle: EquilateralTriangle = EquilateralTriangle(sideLength:5, name:"my test triangle")
-        println("trianle sideLength: \(testTriangle.perimeter)")
+        print("trianle sideLength: \(testTriangle.perimeter)")
         testTriangle.perimeter = 9.0
-        println("trianle sideLength: \(testTriangle.sideLength)")
+        print("trianle sideLength: \(testTriangle.sideLength)")
         
         var simpleClass = SimpleClass();
         simpleClass.adjust();

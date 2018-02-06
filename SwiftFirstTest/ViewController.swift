@@ -37,7 +37,7 @@ class ViewController: UIViewController
     
     func printMathResult(mathFunction: (Int, Int) -> Int, a: Int, b: Int)
     {
-        println("Result: \(mathFunction(a, b))")
+        print("Result: \(mathFunction(a, b))")
     }
     
     func addTwoInts(a:Int, b:Int) -> Int
